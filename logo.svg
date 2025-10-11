@@ -1,0 +1,56 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle with gradient -->
+  <defs>
+    <linearGradient id="greenTealGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#14b8a6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="lightGreenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#34d399;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5eead4;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="darkGreenGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#059669;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d9488;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="url(#greenTealGradient)"/>
+
+  <!-- Wallet/Money icon -->
+  <g transform="translate(40, 50)">
+    <!-- Wallet body -->
+    <rect x="10" y="30" width="100" height="70" rx="8" fill="white" opacity="0.95"/>
+
+    <!-- Wallet fold -->
+    <rect x="10" y="30" width="100" height="20" rx="8" fill="url(#darkGreenGradient)"/>
+
+    <!-- Dollar sign in circle -->
+    <circle cx="60" cy="65" r="22" fill="url(#lightGreenGradient)"/>
+    <text x="60" y="75" font-size="32" font-weight="bold" fill="#065f46" text-anchor="middle" font-family="Arial, sans-serif">$</text>
+
+    <!-- Card slots -->
+    <rect x="20" y="85" width="30" height="4" rx="2" fill="#10b981" opacity="0.6"/>
+    <rect x="20" y="92" width="30" height="4" rx="2" fill="#14b8a6" opacity="0.6"/>
+  </g>
+
+  <!-- Decorative coins -->
+  <g transform="translate(130, 120)">
+    <circle cx="0" cy="0" r="15" fill="url(#lightGreenGradient)" opacity="0.8"/>
+    <text x="0" y="6" font-size="16" font-weight="bold" fill="#065f46" text-anchor="middle" font-family="Arial, sans-serif">¢</text>
+  </g>
+
+  <g transform="translate(150, 90)">
+    <circle cx="0" cy="0" r="12" fill="url(#lightGreenGradient)" opacity="0.7"/>
+    <text x="0" y="5" font-size="14" font-weight="bold" fill="#065f46" text-anchor="middle" font-family="Arial, sans-serif">¢</text>
+  </g>
+
+  <!-- Growth arrow -->
+  <g transform="translate(30, 140)">
+    <path d="M 0 20 L 30 5 L 30 15 L 40 15 L 40 25 L 30 25 L 30 35 Z" fill="#22c55e" opacity="0.9"/>
+  </g>
+
+  <!-- Circular border -->
+  <circle cx="100" cy="100" r="95" fill="none" stroke="white" stroke-width="3" opacity="0.3"/>
+</svg>
